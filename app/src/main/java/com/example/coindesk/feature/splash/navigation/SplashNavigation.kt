@@ -14,8 +14,8 @@ fun NavGraphBuilder.splashNavigation(navController: NavHostController){
 
     navigation(startDestination = SPLASH_SCREEN, route = SPLASH_NAV_GRAPH){
         composable(route = Screen.Splash.route){
-            SplashScreen {
-                    navController.navigate(Screen.Main.route){
+            SplashScreen { targetDestination ->
+                    navController.navigate(targetDestination.route){
                         popUpTo(Screen.Splash.route){
                             inclusive = true
                         }

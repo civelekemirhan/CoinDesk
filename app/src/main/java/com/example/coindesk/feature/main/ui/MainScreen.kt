@@ -13,7 +13,12 @@ import androidx.compose.animation.with
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -21,16 +26,31 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import com.example.coindesk.feature.main.component.BottomBarItem
 import com.example.coindesk.feature.main.component.CustomBottomBar
+import com.example.coindesk.ui.theme.backgroundReverse
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(onNavigation : (pageName : String) -> Unit){
 
     var selectedItem by remember { mutableStateOf<BottomBarItem>(BottomBarItem.Home) }
     Scaffold (
-        topBar = {},
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = {
+                    Text(
+                        selectedItem.title,
+                        style = MaterialTheme.typography.headlineLarge,
+                        color = MaterialTheme.colorScheme.backgroundReverse,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+            )
+
+        },
         bottomBar = {
             CustomBottomBar(
                 currentSelectedScreen = selectedItem,
@@ -52,9 +72,6 @@ fun MainScreen(onNavigation : (pageName : String) -> Unit){
                 }
 
             }
-
-
-
 
         }
     }

@@ -68,6 +68,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha02")
+
 
 
     implementation("com.google.dagger:hilt-android:2.51.1")
@@ -80,6 +82,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
 
     implementation("com.valentinilk.shimmer:compose-shimmer:1.3.1")
+
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    implementation("androidx.datastore:datastore-preferences:1.1.4")
 
 }
 kapt {

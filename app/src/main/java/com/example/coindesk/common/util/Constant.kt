@@ -14,6 +14,9 @@ object Constant {
     const val SPLASH_NAV_GRAPH = "splash_nav_graph"
 
 
-    const val BASE_URL = "https://api.coindesk.com/v1/bpi/currentprice.json"
+    const val BASE_URL = "https://min-api.cryptocompare.com"
+
+
+    const val API_KEY = "affdf5ca758d65ec32fa2a0f6179bfb541a57dd2f798ddbb7b05d8a0e4b5753b"
 
 }

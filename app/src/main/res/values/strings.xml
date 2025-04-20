@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">CoinDesk</string>
+
+    <!-- Onboarding Screen 1 -->
+    <string name="onboarding_title_1">Stay Ahead in Crypto</string>
+    <string name="onboarding_subtitle_1">Real-time news from the heart of the blockchain world</string>
+    <string name="onboarding_description_1">Get the latest insights, market trends, and analysis directly from CoinDesk. Be the first to know what moves the crypto markets.</string>
+
+    <!-- Onboarding Screen 2 -->
+    <string name="onboarding_title_2">Your Crypto Daily Briefing</string>
+    <string name="onboarding_subtitle_2">Curated news &amp; prices at a glance</string>
+    <string name="onboarding_description_2">No more endless scrolling. We bring you the essential updates, prices, and charts you need — every day, every hour.</string>
+
+    <!-- Onboarding Screen 3 -->
+    <string name="onboarding_title_3">Smarter Decisions Start Here</string>
+    <string name="onboarding_subtitle_3">Trusted crypto intelligence at your fingertips</string>
+    <string name="onboarding_description_3">Empower your trades with expert insights, data-backed articles, and unbiased market analysis. All in one app.</string>
+
+    <!-- Onboarding Screen 4 -->
+    <string name="onboarding_title_4">All-in-One Crypto Hub</string>
+    <string name="onboarding_subtitle_4">Prices, News, Trends &amp; More</string>
+    <string name="onboarding_description_4">From Bitcoin to NFTs — track prices, follow market sentiment, and discover opportunities in the world of digital assets.</string>
 </resources>
